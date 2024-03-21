@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 
 const routes = require("./router")
 const app= express();
@@ -14,5 +15,6 @@ app.use(express.json())
 
 app.use(routes)
 
-
+mongoose.connect("mongodb://localhost:27017/book-libary")
+.then(()=> console.log("DB Conncected"))
 app.listen(3000, ()=> console.log("Server is listening on port  3000")) 
