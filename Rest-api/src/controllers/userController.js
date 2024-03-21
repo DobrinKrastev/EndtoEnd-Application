@@ -2,19 +2,18 @@ const router = require("express").Router();
 const userServise = require("../services/userService")
 
 router.post("/register",async(req,res)=>{
-const userData = req.body;
-const {userId,email,token} = await userServise.register(userData);
-
-res.json({
-    userId,
-    email,
-    token
-})
+    const userData = req.body;
+    const result = await userServise.register(userData);
+    
+    res.json({result})
 
 });
 
-router.post("/login",(req,res)=>{
-    //TODO
+router.post("/login",async (req,res)=>{
+    const userData = req.body;
+    const result = await userServise.login(userData);
+    
+    res.json({result})
 })
 
 
