@@ -20,6 +20,10 @@ const bookSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true
+    },
+    owner:{
+        type:mongoose.Types.ObjectId,
+        ref: "User"
     }
 });
 
