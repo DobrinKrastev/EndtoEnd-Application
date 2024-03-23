@@ -1,0 +1,12 @@
+<!-- Dashboard Page -->
+<div class="container">
+    <h1>Book Inventory</h1>
+    <div class="books-container">
+      <!-- Book Card Component -->
+      <div *ngFor="let book of books" class="book-card">
+        <img [src]="book.imageUrl" alt="Book Image">
+        <h2>{{ book.name }}</h2>
+      </div>
+    </div>
+  </div>
+  
