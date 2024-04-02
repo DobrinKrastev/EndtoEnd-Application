@@ -7,19 +7,23 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { BookListComponent } from './book-list/book-list.component';
-import{ HttpClientModule } from '@angular/common/http'
+import{ HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component'
+import { UserModule } from './user/user.module';
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    BookListComponent
+    BookListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
