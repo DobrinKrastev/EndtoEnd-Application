@@ -6,7 +6,9 @@
       <div *ngFor="let book of books" class="book-card">
         <img [src]="book.imageUrl" alt="Book Image">
         <h2>{{ book.name }}</h2>
-        <button>Open</button>
+        <div class="buttons">
+          <a routerLink="/dashboard/details/{{book._id}}" class="button">Details</a>
+        </div>
       </div>
     </div>
   </div>

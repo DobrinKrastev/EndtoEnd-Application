@@ -10,10 +10,10 @@ router.get("/dashboard", async (req,res)=>{
   
 });
 router.get("/dashboard/details/:bookId", async (req,res)=>{
-     ;
-    const book = await bookService.getOne(req.params.bookId);
 
-    res.json(book)
+    const book = await bookService.getOne(req.params.bookId);
+  
+ res.json(book)
   
   
 });

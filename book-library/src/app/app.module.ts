@@ -10,12 +10,14 @@ import { BookListComponent } from './book-list/book-list.component';
 import{ HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component'
 import { UserModule } from './user/user.module';
+import { DetailsComponent } from './details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     BookListComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

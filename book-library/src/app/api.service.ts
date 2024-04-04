@@ -15,4 +15,10 @@ export class ApiService {
 
      return this.http.get<Book[]>(`${apiUrl}/dashboard`);
   }
+
+  getSingleBook(bookId:string){
+    const apiUrl = 'http://localhost:3000';
+    return this.http.get<Book[]>(`${apiUrl}/dashboard/details/${bookId}`)
+  }
+
 }

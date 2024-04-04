@@ -1,75 +1,71 @@
 /* Dashboard Component */
 .dashboard-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .book-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    display: flex;
-  }
-  
-  .book-card img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 1.5rem;
-  }
-  
-  .book-details {
-    flex-grow: 1;
-  }
-  
-  .book-details h2 {
-    margin-top: 0;
-  }
-  
-  .book-details p {
-    margin: 0;
-  }
-  
-  .book-actions {
-    display: flex;
-    align-items: center;
-  }
-  
-  .book-actions button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .book-actions button:hover {
-    background-color: #0056b3;
-  }
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.book-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.book-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.book-details h2 {
+  margin-top: 0;
+}
+
+.book-details p {
+  margin: 0;
+}
+
+.book-actions {
+  display: flex;
+  align-items: center;
+}
+
+.book-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* More specific button styles */
+.book-card .book-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card .book-actions button:hover {
+  background-color: #0056b3;
+}
+

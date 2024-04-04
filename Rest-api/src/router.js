@@ -7,8 +7,8 @@ router.use("/login", userController);
 router.use("/logout", userController);
 router.use("/",bookController);
 router.use("/dashboard",bookController);
+router.use("/dashboard/details/:bookId",bookController);
 router.use("/create",bookController);
-router.use("/details",bookController);
 
 
 module.exports = router
