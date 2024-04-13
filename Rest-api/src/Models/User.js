@@ -11,13 +11,18 @@ const bcrypt = require("bcrypt");
     type: String,
     required: true,
     unique:true,
-    maxLength: 10,
+    maxLength: 30,
  },
  password: {
     type: String,
     required: true,
     minLength: 6,
  },
+ repassword:{
+   type: String,
+   required: true,
+   minLength: 6,
+ }
 })
 
 userShema.pre("save",async function(){

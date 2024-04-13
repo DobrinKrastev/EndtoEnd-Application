@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserRoutinModule } from './user-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +15,10 @@ import { UserRoutinModule } from './user-routing.module';
   ],
   imports: [
     CommonModule,
-    UserRoutinModule
+    UserRoutinModule,
+    ReactiveFormsModule,
+    FormsModule,
+    RouterModule,
   ]
 })
 export class UserModule { }

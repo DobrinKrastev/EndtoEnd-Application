@@ -7,10 +7,12 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { BookListComponent } from './book-list/book-list.component';
-import{ HttpClientModule } from '@angular/common/http';
+import{ HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component'
 import { UserModule } from './user/user.module';
 import { DetailsComponent } from './details/details.component';
+import { TokenInterceptor } from './token.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,7 @@ import { DetailsComponent } from './details/details.component';
     HttpClientModule,
     UserModule
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
